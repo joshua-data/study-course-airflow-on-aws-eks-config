@@ -26,7 +26,7 @@ spec:
       - name: "AIRFLOW__KUBERNETES_EXECUTOR__WORKER_CONTAINER_REPOSITORY"
         value: "apache/airflow"
       - name: "AIRFLOW__KUBERNETES_EXECUTOR__WORKER_CONTAINER_TAG"
-        value: "slim-2.5.1-python3.8"
+        value: "slim-3.0.2-python3.10"
     executor: "KubernetesExecutor"
     createUserJob:
       useHelmHooks: false
