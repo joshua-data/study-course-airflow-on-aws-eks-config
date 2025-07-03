@@ -9,14 +9,14 @@ spec:
   chart:
     spec:
       chart: airflow
-      version: "1.7.0"
+      version: "8.9.0"
       sourceRef:
         kind: HelmRepository
         name: apache-airflow
         namespace: flux-system
   values:
-    defaultAirflowTag: "3.0.2"
-    airflowVersion: "3.0.2"
+    defaultAirflowTag: "2.8.4"
+    airflowVersion: "2.8.4"
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
     env:
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
@@ -26,7 +26,7 @@ spec:
       - name: "AIRFLOW__KUBERNETES_EXECUTOR__WORKER_CONTAINER_REPOSITORY"
         value: "apache/airflow"
       - name: "AIRFLOW__KUBERNETES_EXECUTOR__WORKER_CONTAINER_TAG"
-        value: "slim-3.0.2-python3.10"
+        value: "slim-2.8.4-python3.10"
     executor: "KubernetesExecutor"
     createUserJob:
       useHelmHooks: false
