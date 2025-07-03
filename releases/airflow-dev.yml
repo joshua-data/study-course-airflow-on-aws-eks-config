@@ -32,6 +32,11 @@ spec:
       useHelmHooks: false
     migrateDatabaseJob:
       useHelmHooks: false
+    postgresql:
+      persistence:
+        enabled: True # PostgreSQL 데이터 저장을 위해 persistence를 활성화 (대부분 기본값으로 활성화됨)
+        storageClass: "gp2"
+        size: 10Gi # PostgreSQL 데이터베이스에 필요한 저장 공간 (필요시 조정)
     dags:
       persistence:
         enabled: False   # DAG을 Git으로만 가져오고, PVC 사용 안함
