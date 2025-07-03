@@ -5,4 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://airflow.apache.org/
+  url: https://airflow-helm.github.io/charts
