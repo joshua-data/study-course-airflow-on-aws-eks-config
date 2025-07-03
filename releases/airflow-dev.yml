@@ -42,3 +42,4 @@ spec:
         maxFailures: 0   # 실패 시 몇 번까지 재시도
         subPath: "dags"  # repo 내부의 서브디렉토리 (예: dags 폴더 내만 mount)
         wait: 60         # pull 간격 (초)      
+        
