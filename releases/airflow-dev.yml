@@ -32,3 +32,13 @@ spec:
       useHelmHooks: false
     migrateDatabaseJob:
       useHelmHooks: false
+    dags:
+      persistence:
+        enabled: False   # DAG을 Git으로만 가져오고, PVC 사용 안함
+      gitSync:
+        enabled: True    # git-sync sidecar 활성화
+        repo: https://github.com/joshua-data/study-course-airflow-on-aws-dags.git
+        branch: main     # 어떤 브랜치를 pull할 건지
+        maxFailures: 0   # 실패 시 몇 번까지 재시도
+        subPath: "dags"  # repo 내부의 서브디렉토리 (예: dags 폴더 내만 mount)
+        wait: 60         # pull 간격 (초)      
