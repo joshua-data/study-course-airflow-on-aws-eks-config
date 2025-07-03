@@ -29,9 +29,9 @@ spec:
         value: "slim-3.0.2-python3.10"
     executor: "KubernetesExecutor"
     createUserJob:
-      useHelmHooks: false
+      useHelmHooks: true
     migrateDatabaseJob:
-      useHelmHooks: false
+      useHelmHooks: true
     dags:
       persistence:
         enabled: False   # DAG을 Git으로만 가져오고, PVC 사용 안함
