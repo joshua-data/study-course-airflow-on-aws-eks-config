@@ -32,3 +32,10 @@ spec:
       useHelmHooks: false
     migrateDatabaseJob:
       useHelmHooks: false
+    postgresql:
+      enabled: true
+      persistence:
+        enabled: true
+        storageClass: gp2
+        size: 10Gi
+        volumeBindingMode: WaitForFirstConsumer
