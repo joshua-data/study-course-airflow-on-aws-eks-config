@@ -3,9 +3,8 @@ kind: HelmRelease
 metadata:
   name: airflow
   namespace: dev
-install:
-  timeout: 10m0s
 spec:
+  timeout: 10m0s
   interval: 30s
   releaseName: airflow-dev
   chart:
