@@ -35,10 +35,7 @@ spec:
     # PostgreSQL 설정
     postgresql:
       enabled: true
-      postgresqlPassword: postgres
-      postgresqlUsername: postgres
-      primary:
-        persistence:
-          enabled: true
-          storageClass: gp3-csi
-          size: 10Gi
+      persistence:
+        enabled: true
+        storageClass: gp3-csi
+        size: 8Gi
