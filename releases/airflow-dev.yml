@@ -37,5 +37,5 @@ spec:
       enabled: true
       persistence:
         enabled: true
-        storageClass: gp3-csi
+        storageClass: gp2
         size: 8Gi
