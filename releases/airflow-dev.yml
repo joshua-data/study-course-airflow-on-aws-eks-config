@@ -42,29 +42,3 @@ spec:
           enabled: true
           storageClass: gp3-csi
           size: 10Gi
-    # Redis 설정
-    redis:
-      enabled: true
-      persistence:
-        enabled: true
-        storageClass: gp3-csi
-        size: 5Gi
-    # Workers 설정
-    workers:
-      persistence:
-        enabled: true
-        storageClass: gp3-csi
-        size: 20Gi
-    # DAGs persistence 설정 (선택사항)
-    dags:
-      persistence:
-        enabled: true
-        storageClass: gp3-csi
-        size: 5Gi
-        accessMode: ReadWriteOnce
-    # Logs persistence 설정 (선택사항)
-    logs:
-      persistence:
-        enabled: true
-        storageClass: gp3-csi
-        size: 50Gi
