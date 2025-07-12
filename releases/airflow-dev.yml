@@ -32,7 +32,6 @@ spec:
       useHelmHooks: false
     migrateDatabaseJob:
       useHelmHooks: false    
-
     persistance:
       enabled: true
       storageClassName: gp3-csi
