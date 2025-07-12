@@ -32,9 +32,7 @@ spec:
       useHelmHooks: false
     migrateDatabaseJob:
       useHelmHooks: false    
-    postgresql:
-      primary:
-        persistence:
-          enabled: true
-          storageClassName: gp3-csi
-          storageClass: gp3-csi
+
+    persistance:
+      enabled: true
+      storageClassName: gp3-csi
